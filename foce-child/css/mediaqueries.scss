@@ -1,0 +1,144 @@
+
+/* mobile device*/
+/* navbar */
+/* burger menu */
+/*-- header --*/
+/*-- personnages --*/
+/* -- lieu -- */
+/*---- nomination ----*/
+/*---- footer ----*/
+@media screen and (max-width: 682px) {
+	h2 {
+		font-size: 2rem;
+	}
+	h3 {
+		font-size: 2rem;
+	}
+	.empty {
+		display: none;
+	}
+	.navbar {
+		grid-template-columns: 1fr 1fr;
+		gap: 43px;
+	}
+	.site-title.navbar {
+		a {
+			margin-left: 5rem;
+			margin-right: -13rem;
+		}
+	}
+	.menu-btn {
+		left: 30%;
+	}
+	.nav {
+		width: 501px;
+		.nav__list_item {
+			font-size: 30px;
+		}
+	}
+	.nav.active {
+		justify-content: center;
+		align-items: center;
+		background-image: none;
+		height: 100vh;
+		width: 100vw;
+		gap: 30px;
+	}
+	.logo-menu {
+		left: 15%;
+		width: 30%;
+	}
+	.nav__list {
+		margin: 0;
+	}
+	.orchid-menu {
+		display: none;
+	}
+	.random-flower-menu {
+		display: none;
+	}
+	.jaakuna-menu {
+		display: none;
+	}
+	.orenjiiro-menu {
+		display: none;
+	}
+	.flower-menu {
+		display: none;
+	}
+	.Kawaneko-menu {
+		display: none;
+	}
+	.img-bottom {
+		left: 46%;
+		width: 20%;
+	}
+	.video-bg {
+		display: none;
+	}
+	.banner {
+		background-image: url(../assets/images/banner.png);
+	}
+	.story {
+		#characters {
+			margin: 3rem 0 0;
+			h3 {
+				background-position: center;
+				text-align: center;
+				padding-left: 4%;
+			}
+		}
+		#place {
+			background-image: url(/wp-content/themes/foce/assets/images/place_bg.png);
+			background-position-x: -8vw;
+			min-height: 450px;
+			>div {
+				width: 80%;
+			}
+		}
+	}
+	swiper-container {
+		width: 36%;
+		padding-bottom: 0;
+		height: 30vh;
+	}
+	swiper-slide {
+		height: 300px;
+		img {
+			width: 70%;
+		}
+	}
+	#place {
+		.littleCloud {
+			display: none;
+		}
+		.bigCloud {
+			display: none;
+		}
+	}
+	.section-oscar {
+		h3 {
+			&::after {
+				display: none;
+			}
+		}
+	}
+	#section-oscar {
+		h3 {
+			background-size: contain;
+			font-size: 22px;
+			padding: 6rem 2rem;
+		}
+		img {
+			margin-top: -60px;
+		}
+	}
+	.site-footer {
+		padding-top: 8em;
+		ul {
+			&::after {
+				bottom: -36.5em;
+			}
+		}
+	}
+}

@@ -1,0 +1,130 @@
+/* mobile device*/
+@media screen and (max-width: 682px) {
+  h2,
+  h3 {
+    font-size: 2rem;
+  }
+
+  /* navbar */
+  .empty {
+    display: none;
+  }
+
+  .navbar {
+    grid-template-columns: 1fr 1fr;
+    gap: 43px;
+  }
+
+  .site-title.navbar a {
+    margin-left: 5rem;
+    margin-right: -13rem;
+  }
+
+  .site-title.navbar {
+  }
+  .menu-btn {
+    left: 30%;
+  }
+
+  /* burger menu */
+  .nav {
+    width: 501px;
+  }
+  .nav.active {
+    justify-content: center;
+    align-items: center;
+    background-image: none;
+    height: 100vh;
+    width: 100vw;
+    gap: 30px;
+  }
+  .logo-menu {
+    left: 15%;
+    width: 30%;
+  }
+  .nav__list {
+    margin: 0;
+  }
+
+  .nav .nav__list_item {
+    font-size: 30px;
+  }
+  .orchid-menu,
+  .random-flower-menu,
+  .jaakuna-menu,
+  .orenjiiro-menu,
+  .flower-menu,
+  .Kawaneko-menu {
+    display: none;
+  }
+  .img-bottom {
+    left: 46%;
+    width: 20%;
+  }
+
+  /*-- header --*/
+  .video-bg {
+    display: none;
+  }
+  .banner {
+    background-image: url(../assets/images/banner.png);
+  }
+
+  /*-- personnages --*/
+  .story #characters {
+    margin: 3rem 0 0;
+  }
+  .story #characters h3 {
+    background-position: center;
+    text-align: center;
+    padding-left: 4%;
+  }
+  swiper-container {
+    width: 36%;
+    padding-bottom: 0;
+    height: 30vh;
+  }
+  swiper-slide {
+    height: 300px;
+  }
+  swiper-slide img {
+    width: 70%;
+  }
+
+  /* -- lieu -- */
+  .story #place {
+    background-image: url(/wp-content/themes/foce/assets/images/place_bg.png);
+    background-position-x: -8vw;
+  }
+  #place .littleCloud,
+  #place .bigCloud {
+    display: none;
+  }
+  .story #place {
+    min-height: 450px;
+  }
+  .story #place > div {
+    width: 80%;
+  }
+
+  /*---- nomination ----*/
+  .section-oscar h3::after {
+    display: none;
+  }
+  #section-oscar h3 {
+    background-size: contain;
+    font-size: 22px;
+    padding: 6rem 2rem;
+  }
+  #section-oscar img {
+    margin-top: -60px;
+  }
+
+  /*---- footer ----*/
+  .site-footer {
+    padding-top: 8em;
+  }
+  .site-footer ul::after {
+    bottom: -36.5em;
+  }
+}
