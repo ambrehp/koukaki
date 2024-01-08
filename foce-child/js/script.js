@@ -67,3 +67,19 @@ menuItem.forEach(function (menuItem) {
     menu.classList.toggle("active");
   });
 });
+
+// Title Scroll
+// Sélection des titre avec document.querySelector("") dans le html
+let titleStory = document.querySelector(".title-story");
+let titlePlace = document.querySelector(".title-place");
+let titleStudio = document.querySelector(".title-studio");
+let titleCharacter = document.querySelector(".title-character");
+let sectionOscar = document.querySelector(".section-oscar");
+//let bannerPosition = section.getBoundingClientRect(); // getBoundingClientRect renvoie un objet avec les propriétés top, bottom, left et right
+
+// écoute de l'event de défilement (scroll) sur la fenêtre (window)
+window.addEventListener("scroll", () => {
+  // log quand l'element est visible
+  // si
+  //console.log("élément visible");
+});

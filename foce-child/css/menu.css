@@ -2,6 +2,7 @@
   animation: spin 9s infinite linear;
   transition: opacity 0.5s, transform 0.5s;
 }
+
 @keyframes spin {
   from {
     transform: rotate(0deg);
@@ -10,7 +11,6 @@
     transform: rotate(360deg);
   }
 }
-
 .navbar {
   position: fixed;
   display: grid;
@@ -56,6 +56,7 @@ header {
 .menu-btn .bar:nth-of-type(2) {
   top: calc(50% - 9px);
 }
+
 .menu-btn .bar:nth-of-type(3) {
   top: calc(50% + 9px);
 }
@@ -63,10 +64,12 @@ header {
 .menu-btn.active .bar:nth-of-type(1) {
   display: none;
 }
+
 .menu-btn.active .bar:nth-of-type(2) {
   top: 50%;
   transform: translate(-50%, 0%) rotate(45deg);
 }
+
 .menu-btn.active .bar:nth-of-type(3) {
   top: 50%;
   transform: translate(-50%, 0%) rotate(-45deg);
@@ -82,6 +85,7 @@ header {
   background: #fff5e9;
   display: none;
 }
+
 .nav.fade-in-text {
   animation: fadeIn 1s;
 }
@@ -106,47 +110,56 @@ header {
   left: 42%;
   width: 18%;
 }
+
 .img-bottom {
   left: 47%;
   width: 10%;
   margin-top: 46px;
 }
+
 /* disposition fleurs et chats menu */
 .img-menu {
   position: absolute;
 }
+
 .orchid-menu {
   left: -59px;
   top: 152px;
 }
+
 .Kawaneko-menu {
   top: 225px;
   left: 267px;
   width: 109px;
 }
+
 .flower-menu {
   top: 450px;
   left: 213px;
   width: 70px;
 }
+
 .sunflower-menu {
   width: 190px;
   height: 190px;
   top: 169px;
   left: 1039px;
 }
+
 .random-flower-menu {
   width: 75px;
   height: 74.53px;
   top: 385px;
   right: -36px;
 }
+
 .jaakuna-menu {
   width: 130px;
   height: 130px;
   top: 440px;
   right: 200px;
 }
+
 .orenjiiro-menu {
   width: 90px;
   height: 85px;

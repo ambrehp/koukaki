@@ -1,0 +1,373 @@
+
+/* SUMMARY
+
+-- Keyframes --
+    Fade in
+    FadeInUp
+    Spin
+    Floating
+
+    => parallax
+
+-- Header --
+    Banner
+    Video
+    Logo
+
+-- story --
+-- personnages --
+
+-- lieu --
+    -nuage-
+
+-- studio --
+-- nomination --
+-- footer --
+*/
+
+/*fade In effect*/
+@mixin keyframes($fadeIn) {
+    @-webkit-keyframes #{$fadeIn} {
+        @content;
+    }
+    @-moz-keyframes #{$fadeIn} {
+        @content;
+    }
+    @-ms-keyframes #{$fadeIn} {
+        @content;
+    }
+    @keyframes #{$fadeIn} {
+        @content;
+    }
+}
+
+@include keyframes(animate-preloader) {
+    0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+
+/*fadeInUp effect*/
+@mixin keyframes($fadeInUp) {
+    @-webkit-keyframes #{$fadeInUp} {
+        @content;
+    }
+    @-moz-keyframes #{$fadeInUp} {
+        @content;
+    }
+    @-ms-keyframes #{$fadeInUp} {
+        @content;
+    }
+    @keyframes #{$fadeInUp} {
+        @content;
+    }
+}
+
+@include keyframes(animate-preloader) {
+    0% {
+		transform: translate(0px, 100px);
+		opacity: 0;
+	}
+	100% {
+		transform: translate(0px, 0);
+		opacity: 1;
+	}
+}
+
+
+/*parallax effect*/
+/*Float animation*/
+@mixin keyframes($float) {
+    @-webkit-keyframes #{$float} {
+        @content;
+    }
+    @-moz-keyframes #{$float} {
+        @content;
+    }
+    @-ms-keyframes #{$float} {
+        @content;
+    }
+    @keyframes #{$float} {
+        @content;
+    }
+}
+
+@include keyframes(animate-preloader) {
+    from {
+		transform: translate(0, 0px);
+	}
+	65% {
+		transform: translate(0, 15px);
+	}
+	to {
+		transform: translate(0, -0px);
+	}
+}
+
+
+/* --- Header --- */
+/* -- story -- */
+/*--petales--*/
+@mixin keyframes($spin) {
+    @-webkit-keyframes #{$spin} {
+        @content;
+    }
+    @-moz-keyframes #{$spin} {
+        @content;
+    }
+    @-ms-keyframes #{$spin} {
+        @content;
+    }
+    @keyframes #{$spin} {
+        @content;
+    }
+}
+
+@include keyframes(animate-preloader) {
+    from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+
+
+/* -- personnages -- */
+/* -- lieu -- */
+/* - nuage - */
+/* -- studio -- */
+/*--petales--*/
+/*---- nomination ----*/
+/*---- footer ----*/
+&:root {
+	--flower-rotation-time: "9s";
+}
+
+.hidden {
+	opacity: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+.fade-in-text {
+	animation: fadeIn 10s;
+	-webkit-animation: fadeIn 10s;
+	-moz-animation: fadeIn 10s;
+	-o-animation: fadeIn 10s;
+	-ms-animation: fadeIn 10s;
+}
+
+.fadeInUp {
+	animation: fadeInUp 1.2s ease backwards;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+.parallax-item {
+	width: 100%;
+}
+
+.floating {
+	animation-name: float;
+	animation-duration: 2.3s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+
+.banner {
+	background-image: none;
+	.video-bg {
+		position: absolute;
+	}
+}
+
+.imglogo {
+	position: sticky;
+	top: 80px;
+	z-index: 10;
+}
+
+.title-fadeInUp {
+	animation: fadeInUp 1.2s ease backwards;
+	animation-delay: 2s;
+}
+
+#story {
+	.story {
+		&::before {
+			animation: fadeInUp 1.2s ease backwards;
+			animation-delay: 2s;
+		}
+	}
+}
+
+.story__article {
+	&::before {
+		animation: fadeInUp 1.2s ease backwards;
+		animation-delay: 2s;
+	}
+	&::after {
+		animation: fadeInUp 1.2s ease backwards, spin var(--flower-rotation-time) infinite linear;
+		transition: opacity 0.5s, transform 0.5s;
+		animation-delay: 2s;
+	}
+}
+
+#story.fade-in-text {
+	animation-delay: 3s;
+}
+
+.story {
+	h2 {
+		&::after {
+			animation: fadeInUp 1.2s ease backwards, spin var(--flower-rotation-time) infinite linear;
+			transition: opacity 0.5s, transform 0.5s;
+			animation-delay: 2s;
+		}
+	}
+	#characters {
+		margin: 11rem 0 0;
+		h3 {
+			background-position: 10%;
+			text-align: left;
+			padding-left: 10%;
+		}
+	}
+	#place {
+		background-image: url(/wp-content/themes/foce-child/assets/images/Studio_Koukaki-image_place.png);
+	}
+}
+
+#characters.fadeInUp {
+	transition: opacity 0.7s, transform 0.7s;
+	animation-delay: 3s;
+}
+
+#characters.fade-in-text {
+	transition: opacity 0.7s, transform 0.7s;
+	animation-delay: 4s;
+}
+
+.main-character {
+	width: 1440px;
+	margin: 0 auto;
+}
+
+#place.fadeInUp {
+	transition: opacity 0.7s, transform 0.7s;
+	animation-delay: 4s;
+}
+
+#place.fade-in-text {
+	transition: opacity 0.7s, transform 0.7s;
+	animation-delay: 5s;
+}
+
+#place {
+	.littleCloud {
+		position: absolute;
+		filter: blur(12px);
+	}
+	.bigCloud {
+		position: absolute;
+		filter: blur(12px);
+	}
+}
+
+.bigCloud {
+	top: 70%;
+	right: 10%;
+}
+
+.littleCloud {
+	top: 75%;
+	right: 35%;
+}
+
+#studio.fadeInUp {
+	transition: opacity 0.7s, transform 0.7s;
+	animation-delay: 5s;
+}
+
+#studio.fade-in-text {
+	transition: opacity 0.7s, transform 0.7s;
+	animation-delay: 6s;
+}
+
+#studio {
+	h2 {
+		&::before {
+			left: 50px;
+			animation: spin var(--flower-rotation-time) infinite linear;
+		}
+		&::after {
+			animation: spin var(--flower-rotation-time) infinite linear;
+		}
+	}
+}
+
+#section-oscar {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	padding: 10rem 0;
+	margin-bottom: -5rem;
+	animation-delay: 6s;
+	h3 {
+		background-image: url(../assets/images/orange_characters_bg.png);
+		background-position: left;
+		background-size: cover;
+		text-align: left;
+		font-size: 35px;
+		line-height: 1.2;
+		padding: 6rem 16rem;
+	}
+	span {
+		text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
+	}
+}
+
+.section-oscar {
+	h3 {
+		&::before {
+			content: url(../assets/images/Sunflower.png);
+			position: absolute;
+			left: 9rem;
+			top: 0rem;
+			animation: fadeInUp 1.2s ease backwards, spin var(--flower-rotation-time) infinite linear;
+			transition: opacity 0.7s, transform 0.7s;
+			animation-delay: 6s;
+		}
+		&::after {
+			content: url(../assets/images/orchid.png);
+			position: absolute;
+			right: 60px;
+			bottom: 12em;
+			animation: fadeInUp 1.2s ease backwards, spin var(--flower-rotation-time) infinite linear;
+			transition: opacity 0.7s, transform 0.7s;
+			animation-delay: 6s;
+		}
+	}
+}
+
+.site-footer {
+	&::before {
+		display: none;
+	}
+	&::after {
+		display: none;
+	}
+}

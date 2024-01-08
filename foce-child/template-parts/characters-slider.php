@@ -10,7 +10,7 @@ $characters_query = new WP_Query($args);
 ?>
 <article id="characters">
     <div class="main-character fadeInUp">
-        <h3 class="fade-in-text">Les personnages</h3>
+        <h3 class="title-character hidden">Les personnages</h3>
         <swiper-container effect="coverflow" grab-cursor="true" centered-slides="false" slides-per-view="auto" coverflow-effect-rotate="70" coverflow-effect-stretch="0" coverflow-effect-depth="100" coverflow-effect-modifier="1" coverflow-effect-slide-shadows="false">
             <swiper-slide>
                 <img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/Kawaneko.png'; ?> " alt="Kawaneko" /><span>Kawaneko</span>

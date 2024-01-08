@@ -1,34 +1,37 @@
 /* mobile device*/
+/* navbar */
+/* burger menu */
+/*-- header --*/
+/*-- personnages --*/
+/* -- lieu -- */
+/*---- nomination ----*/
+/*---- footer ----*/
 @media screen and (max-width: 682px) {
-  h2,
+  h2 {
+    font-size: 2rem;
+  }
   h3 {
     font-size: 2rem;
   }
-
-  /* navbar */
   .empty {
     display: none;
   }
-
   .navbar {
     grid-template-columns: 1fr 1fr;
     gap: 43px;
   }
-
   .site-title.navbar a {
     margin-left: 5rem;
     margin-right: -13rem;
   }
-
-  .site-title.navbar {
-  }
   .menu-btn {
     left: 30%;
   }
-
-  /* burger menu */
   .nav {
     width: 501px;
+  }
+  .nav .nav__list_item {
+    font-size: 30px;
   }
   .nav.active {
     justify-content: center;
@@ -45,15 +48,21 @@
   .nav__list {
     margin: 0;
   }
-
-  .nav .nav__list_item {
-    font-size: 30px;
+  .orchid-menu {
+    display: none;
   }
-  .orchid-menu,
-  .random-flower-menu,
-  .jaakuna-menu,
-  .orenjiiro-menu,
-  .flower-menu,
+  .random-flower-menu {
+    display: none;
+  }
+  .jaakuna-menu {
+    display: none;
+  }
+  .orenjiiro-menu {
+    display: none;
+  }
+  .flower-menu {
+    display: none;
+  }
   .Kawaneko-menu {
     display: none;
   }
@@ -61,16 +70,12 @@
     left: 46%;
     width: 20%;
   }
-
-  /*-- header --*/
   .video-bg {
     display: none;
   }
   .banner {
     background-image: url(../assets/images/banner.png);
   }
-
-  /*-- personnages --*/
   .story #characters {
     margin: 3rem 0 0;
   }
@@ -78,6 +83,14 @@
     background-position: center;
     text-align: center;
     padding-left: 4%;
+  }
+  .story #place {
+    background-image: url(/wp-content/themes/foce/assets/images/place_bg.png);
+    background-position-x: -8vw;
+    min-height: 450px;
+  }
+  .story #place > div {
+    width: 80%;
   }
   swiper-container {
     width: 36%;
@@ -90,24 +103,12 @@
   swiper-slide img {
     width: 70%;
   }
-
-  /* -- lieu -- */
-  .story #place {
-    background-image: url(/wp-content/themes/foce/assets/images/place_bg.png);
-    background-position-x: -8vw;
+  #place .littleCloud {
+    display: none;
   }
-  #place .littleCloud,
   #place .bigCloud {
     display: none;
   }
-  .story #place {
-    min-height: 450px;
-  }
-  .story #place > div {
-    width: 80%;
-  }
-
-  /*---- nomination ----*/
   .section-oscar h3::after {
     display: none;
   }
@@ -119,8 +120,6 @@
   #section-oscar img {
     margin-top: -60px;
   }
-
-  /*---- footer ----*/
   .site-footer {
     padding-top: 8em;
   }
